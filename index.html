@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tea House</title>
-    <!-- Google font -->
+    <!-- Google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,14 +12,14 @@
       rel="stylesheet"
     />
 
-    <!-- Tailwind Code -->
+    <!-- Tailwind Code cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome-->
+    <!-- Font Awesome cdn-->
     <script
       src="https://kit.fontawesome.com/5e878a7a5f.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Tailwind config -->
+    <!-- Tailwind config cdn -->
     <script>
       tailwind.config = {
         theme: {
@@ -27,12 +27,15 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              manrope: ["Manrope", "system-ui"],
+            },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
       <header class="lg:flex pt-20 mb-20">
         <div>
@@ -267,7 +270,73 @@
       </section>
 
       <!-- New and Events section -->
-      <section></section>
+      <section class="py-8 lg:py-18">
+        <!-- Text div -->
+        <div class="text-center mb-8">
+          <h1 class="text-4xl font-bold mb-5">News & Events</h1>
+          <p class="text-gray-500">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable.
+          </p>
+        </div>
+        <!-- All card div -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left"
+        >
+          <!-- First card -->
+          <div
+            class="bg-gray-50 shadow-md rounded-lg overflow-hidden border-2 border-gray-250"
+          >
+            <img class="mx-auto p-4" src="images/news-1.png" alt="" />
+            <div class="pr-6 pl-6 pb-6">
+              <small class="text-gray-500 mb-3">Feb 05, 2027</small>
+              <h3 class="text-xl font-bold mb-5">
+                Collecting 8 points for discount
+              </h3>
+              <p class="text-gray-500 mb-4">
+                There are many variations of passages of Lorem Ipsum available.
+              </p>
+              <h4 class="font-bold">Learn More</h4>
+            </div>
+          </div>
+
+          <!-- Second card -->
+          <div
+            class="bg-gray-50 shadow-md rounded-lg overflow-hidden border-2 border-gray-250"
+          >
+            <img class="mx-auto p-4" src="images/news-2.png" alt="" />
+            <div class="pr-6 pl-6 pb-6">
+              <small class="text-gray-500 mb-3">Feb 05, 2027</small>
+              <h3 class="text-xl font-bold mb-5">
+                Collecting 8 points for discount
+              </h3>
+              <p class="text-gray-500 mb-4">
+                There are many variations of passages of Lorem Ipsum available.
+              </p>
+              <h4 class="font-bold">Learn More</h4>
+            </div>
+          </div>
+
+          <!-- Third card -->
+          <div
+            class="bg-gray-50 shadow-md rounded-lg overflow-hidden border-2 border-gray-250"
+          >
+            <img class="mx-auto p-4" src="images/news-3.png" alt="" />
+            <div class="pr-6 pl-6 pb-6">
+              <small class="text-gray-500 mb-3">Feb 05, 2027</small>
+              <h3 class="text-xl font-bold mb-5">
+                Collecting 8 points for discount
+              </h3>
+              <p class="text-gray-500 mb-4">
+                There are many variations of passages of Lorem Ipsum available.
+              </p>
+              <h4 class="font-bold">Learn More</h4>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer section bg-orange-100 h-32-->
